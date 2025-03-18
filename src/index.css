@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
-@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@200..600&display=swap");
-
 
 :root {
     --primary-color: #666CDA;
@@ -32,13 +30,10 @@
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-
-    
-    background-color: #2F3134;
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004) !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
 }
 
 .icon {
@@ -51,76 +46,6 @@ body {
 }
 
 
-.display1,
-.display2,
-.display3,
-.headline1,
-.headline2,
-.headline3,
-.headline4,
-.headline5,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 500;
-    font-variation-settings: "shrp" 50, "crsv" 1;
-}
-
-.display1 {
-    font-size: 5rem;
-    line-height: 4.75rem;
-    letter-spacing: -0.1rem;
-}
-
-.display2 {
-    font-size: 4.5rem;
-    line-height: 3.75rem;
-    letter-spacing: -0.09rem;
-}
-
-.display3 {
-    font-size: 3.375rem;
-    line-height: 3.75rem;
-    letter-spacing: -0.0675rem;
-}
-
-.headline1,
-h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    letter-spacing: -0.05rem;
-}
-
-.headline2,
-h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    letter-spacing: -0.03rem;
-}
-
-.headline3,
-h3 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    letter-spacing: -0.0175rem;
-}
-
-.headline4,
-h4 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    letter-spacing: -0.01575rem;
-}
-
-.headline5,
-h5 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    letter-spacing: -0.014rem;
-}
 
 .caption {
     font-weight: 500;
@@ -155,14 +80,12 @@ p {
     font-size: 0.625rem;
 }
 
-.button-text,
-button {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    border-radius: 15rem;
-    border: none;
-
-    cursor: pointer;
+.button-text {
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+    border-radius: 15rem !important;
+    border: none !important;
+    cursor: pointer !important;
 }
 
 .AnimatedButton {
