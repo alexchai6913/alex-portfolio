@@ -22,7 +22,7 @@ This project was created as part of the Meta Frontend Developer Certificate prog
 To quickly get started, run the following command:
 
 ```bash
-git clone https://github.com/alexchai6913/alex-portfolio.git && cd portfolio && npm install && npm start
+git clone https://github.com/alexchai6913/alex-portfolio.git && cd alex-portfolio && npm install && npm start
 ```
 
 This will:
