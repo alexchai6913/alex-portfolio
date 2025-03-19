@@ -32,7 +32,7 @@ const LandingSection = () => {
     validationSchema: Yup.object({
       firstName: Yup.string().required("Required"),
       email: Yup.string().email("Invalid email").required("Required"),
-      comment: Yup.string().min(25, "Must be at leat 25 characters").required("Required"),
+      comment: Yup.string().min(25, "Must be at least 25 characters").required("Required"),
     }),
   });
 
@@ -49,11 +49,11 @@ const LandingSection = () => {
   return (
     <FullScreenSection
       isDarkBackground
-      backgroundColor="#512DA8"
+      backgroundColor="bgDark2"
       py={16}
       spacing={8}
     >
-      <VStack w="1024px" p={32} alignItems="flex-start">
+      <VStack w="1024px" p={32} alignItems="flex-start" color="white">
         <Heading as="h1" id="contactme-section">
           Contact me
         </Heading>
@@ -66,6 +66,8 @@ const LandingSection = () => {
                 <Input
                   id="firstName"
                   name="firstName"
+                  backgroundColor="bgLight"
+                  color="bgDark"
                   {...formik.getFieldProps("firstName")}
                 />
            
@@ -81,6 +83,8 @@ const LandingSection = () => {
                   name="email"
                   type="email"
 
+                  backgroundColor="bgLight"
+                  color="bgDark"
                   {...formik.getFieldProps("email")}
                 />
                 <FormErrorMessage>
@@ -90,7 +94,9 @@ const LandingSection = () => {
               <FormControl>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
                 <Select id="type" name="type" 
-                {...formik.getFieldProps("type")}>
+                  backgroundColor="bgLight"
+                  color="bgDark"
+                  {...formik.getFieldProps("type")}>
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">
                     Open source consultancy session
@@ -104,13 +110,15 @@ const LandingSection = () => {
                   id="comment"
                   name="comment"
                   height={250}
+                  backgroundColor="bgLight"
+                  color="bgDark"
                   {...formik.getFieldProps("comment")}
                 />
                 <FormErrorMessage>
                   {formik.errors.comment}
                 </FormErrorMessage>
               </FormControl>
-              <Button type="submit" colorScheme="purple" width="full"
+              <Button type="submit" backgroundColor="white" color="bgDark" width="full"
               
               isLoading={isLoading}
               >

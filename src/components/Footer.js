@@ -3,7 +3,7 @@ import {Box, Flex} from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Box backgroundColor="#18181b">
+    <Box backgroundColor="bgDark">
       <footer>
         <Flex
           margin="0 auto"
@@ -14,7 +14,7 @@ const Footer = () => {
           maxWidth="1024px"
           height={16}
         >
-          <p>Alex • © 2022</p>
+          <p>Alex Chai • © 2022</p>
         </Flex>
       </footer>
     </Box>

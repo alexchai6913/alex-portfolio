@@ -20,7 +20,7 @@ const Card = ({ title, description, imageSrc }) => {
         <Image objectFit="cover" src={imageSrc} alt={title} borderRadius="10px" />
 
         <VStack style={{
-          padding: '10px',
+          padding: '32px',
         }} alignItems="flex-start">
 
           <Heading size="md">{title}</Heading>

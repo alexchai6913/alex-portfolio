@@ -88,8 +88,12 @@ const theme = extendTheme({
     }
   },
   colors: {
-    primary: "#666CDA",
-    bgDark2: "#424242",
+    primary: "#666666",
+    bgDark2: "#333333",
+    bgLight: "#F5F5F5",
+    bgMedium: "#CCCCCC",
+    bgDark: "#1A1A1A",
+    bgDark2: "#2D2D2D"
   },
   styles: {
     global: {
